@@ -4,7 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketing vs. Digital Marketing</title>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .interactive-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+        }
+        .box {
+            padding: 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .product { background-color: #f9a825; }
+        .price { background-color: #fdd835; }
+        .place { background-color: #43a047; }
+        .promotion { background-color: #1e88e5; }
+    </style>
 </head>
 <body>
 
@@ -20,19 +65,19 @@
         </div>
 
         <h2>The 4Ps of Marketing</h2>
-        <div class="box product">
+        <div class="box product" onclick="alert('Product: What you are offering, its features, design, and value.')">
             <h3>Product</h3>
             <p>What you are offering, its features, design, and value.</p>
         </div>
-        <div class="box price">
+        <div class="box price" onclick="alert('Price: How you position it in terms of cost and value.')">
             <h3>Price</h3>
             <p>How you position it in terms of cost and value.</p>
         </div>
-        <div class="box place">
+        <div class="box place" onclick="alert('Place: Where and how you deliver it to your customers.')">
             <h3>Place</h3>
             <p>Where and how you deliver it to your customers.</p>
         </div>
-        <div class="box promotion">
+        <div class="box promotion" onclick="alert('Promotion: How you communicate and spread the word (and that’s where digital marketing comes in).')">
             <h3>Promotion</h3>
             <p>How you communicate and spread the word (and that’s where digital marketing comes in).</p>
         </div>
@@ -43,6 +88,5 @@
         <p>It’s time we stop narrowing the conversation. Digital marketing is powerful, but it’s just one piece of the puzzle.</p>
     </div>
 
-    <script src="js/script.js"></script>
 </body>
 </html>
